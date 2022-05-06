@@ -93,8 +93,8 @@ TEST_CASE("Bad Cases")
 	    Contessa contessa{game_1, "Gilad"};
         CHECK_THROWS(duke.coup(assassin));
         duke.income();
-        ambassador.income();
         assassin.foreign_aid();
+	ambassador.income();
         CHECK_THROWS(assassin.coup(duke));
         CHECK_THROWS(captain.block(duke));
         captain.steal(duke);
